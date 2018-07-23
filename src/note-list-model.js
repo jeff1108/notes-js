@@ -4,7 +4,10 @@
   };
 
   List.prototype.addListText = function(list) {
-    return this.lists.push(list);
+     this.lists.push(list);
+  }
+  List.prototype.ShowNotes = function() {
+     return this.lists;
   }
   exports.List = List;
 })(this)
