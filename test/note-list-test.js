@@ -5,23 +5,22 @@
     assert.isTrue(list.lists.length === 0);
   }
 
-  function testaddListText() {
+  function testaddNoteText() {
     var list = new List();
-    list.addListText("Favourite drink: seltzer")
+    var note = new Note();
+    list.addNoteText("Favourite drink: seltzer")
 
     assert.isTrue(list.lists[0] === "Favourite drink: seltzer")
   }
 
   function testShowNotes() {
     var list = new List();
-    // list.addListText("Favourite drink: seltzer")
-    // assert.isTrue(list.lists[0] === "Favourite drink: seltzer")
-    // list.addListText("Favourite food: burger")
-    // assert.isTrue(list.lists[1] === "Favourite food: burger")
-    list.addListText("Favourite drink: seltzer")
-    assert.isTrue(list.ShowNotes().includes("Favourite rink: seltzer"))
+    list.addNoteText("Favourite drink: seltzer")
+    assert.isTrue(list.ShowNotes().includes("Favourite drink: seltzer"))
    }
+
+
   testListInitialize();
-  testaddListText();
+  testaddNoteText();
   testShowNotes();
 })(this);

@@ -3,8 +3,11 @@
     this.lists = [];
   };
 
-  List.prototype.addListText = function(list) {
-     this.lists.push(list);
+  List.prototype.addNoteText = function(text) {
+     note = new Note
+     var texts
+     texts = note.addText(text)
+     this.lists.push(texts);
   }
   List.prototype.ShowNotes = function() {
      return this.lists;

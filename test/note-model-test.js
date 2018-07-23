@@ -13,7 +13,11 @@
     //   throw new Error("Your note is not work");
     //   }
 
+function testAddText() {
+  var note = new Note();
+  assert.isTrue(note.AddText("Hi Jeff") === "Hi Jeff")
 
+}
 
   testNoteDefaultText();
   testReturnText();
