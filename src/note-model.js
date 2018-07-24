@@ -2,6 +2,7 @@
   function Note() {
     this.text = 'My first note, woo'
   };
+  
   Note.prototype.returnText = function() {
     return this.text;
   }

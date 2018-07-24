@@ -4,6 +4,7 @@
 
     assert.isTrue(note.text === "My first note, woo");
   }
+  
   function testReturnText() {
     var note = new Note();
 
